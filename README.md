@@ -6,13 +6,11 @@
 
 A language for CMSI 488
 
-YahScript is a statically typed programming language with all of the dynamic benefits. It allows for coding how you want, with multiple different options to accomplish what you want. Prefer using
-&& instead of and, or ^ instead of **? We got your back. Taking a dash of Javascript, a sprinkle of Python, a splash of CoffeeScript and compiling into Javascript gives you the glorious and infamous
-YahScript.
+YahScript is a statically typed programming language with all of the dynamic benefits. It allows for coding how you want, with several different ways to accomplish what you want. Prefer using && instead of and, or ^ instead of **? We got your back. Taking a dash of  Javascript, a sprinkle of Python, a splash of CoffeeScript and compiling into Javascript gives you the glorious and infamous YahScript.
 ### Features
 
 #### Comments
-A single line comment is created with two foward slash characters. Multiline comments are started with two foward slashes followed by a backslash and ends with two back slashes followed by a single foward slash. 
+A single line comment is created using two foward slash characters. Multiline comments are started with two foward slashes followed by a backslash and end with two back slashes followed by a single foward slash. 
 
 ```
 //This is a single line comment
@@ -28,7 +26,7 @@ Multiline comment ends below.
 
 ```
 ### Primitive and Reference types
-yah allows for many different ways to represent the same implementation. For instance, notice the two ways to describe undefined, nil, and NaN below.
+Yah allows for many different ways to represent the same implementation. For instance, notice the two ways to describe undefined, nil, and NaN below.
 
 ```
 a is 2                                                      var a = 2;
@@ -50,7 +48,7 @@ i is (1,2,3,4,5) // Tuple                                   var i = ;
 ```
 
 ### Assignment
-Unlike Javascript we do not use var to declare assignment. YahScript also supports constants and, unlike javascript, you cannot edit the properties of an object constant.
+Unlike Javascript we do not use var to declare assignment. YahScript also supports constants and, also unlike Javascript, you cannot edit the properties of an object constant.
 
 ```
 // Example of declaring and assigning to four variables
@@ -93,7 +91,7 @@ print("Hello " * 3)
 ```
 
 ### If and Else
-Exactly the same as python's if and else statements
+Closely emulates Python's if and else statements
 
 ```
 if eq x,y,z,u:                                              if (x === y && y === z && z === u) {
@@ -156,7 +154,7 @@ printParam("Hello")                                         console.log(printPar
 // output is Hello
 ```
 
-Functions may also have default values for arguments, for missing arguments.
+Functions may also have default values for arguments in the case of missing arguments.
 
 ```
 cat is (weight, personality is "cuddly") ->                 var cat = function (weight, personality) {
@@ -170,7 +168,7 @@ cat is (weight, personality is "cuddly") ->                 var cat = function (
 
 
 ###Scoping
-Scpoing in YahScript is similar to python's LEGB rule.
+Scpoing in YahScript is similar to Python's LEGB rule.
 Local -> Enclosed -> Global -> Built In
 YahScript first searches for a variable in the local namespace. If the variable cannot be found in the local namespace, Yahscirpt continues the search in the namespace of the enclosing function. If not found in the enclosing function, or if there is no enclosing function, YahScript looks in the global namespace followed by the namespace of built in / reserved names.
 
