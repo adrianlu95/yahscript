@@ -1,6 +1,6 @@
 # yah
 
-<img src="https://github.com/Tohoma/yahscript/blob/master/yahLogo.png" width="200">
+<img src="https://github.com/Tohoma/yah/blob/master/images/yahLogo.png" width="200">
 
 
 
